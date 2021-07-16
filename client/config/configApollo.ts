@@ -9,7 +9,7 @@ const createApolloClient = () => {
     return new ApolloClient({
         ssrMode: true, 
         link: new HttpLink({
-            uri: 'http://localhost:5000/graphql',
+            uri: 'https://publicis-test-server.herokuapp.com/graphql',
         }),
         cache: new InMemoryCache(),
     });
